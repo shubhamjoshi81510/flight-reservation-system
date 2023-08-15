@@ -28,7 +28,6 @@ public class FlightSchedulesDetail {
     @JoinColumn (name ="source_airport_id")
     private AirpotsDetails sourceAirportId;
 
-
     @ManyToOne
     @JoinColumn (name ="destination_airport_id")
     private AirpotsDetails destinationAirportId;
