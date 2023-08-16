@@ -26,11 +26,11 @@ public class FlightSchedulesDetail {
 
     @ManyToOne
     @JoinColumn (name ="source_airport_id")
-    private AirpotsDetails sourceAirportId;
+    private AirpotsDetails sourceAirport;
 
     @ManyToOne
     @JoinColumn (name ="destination_airport_id")
-    private AirpotsDetails destinationAirportId;
+    private AirpotsDetails destinationAirport;
 
     @Column(name ="departure_time")
     private LocalDateTime departureTime;

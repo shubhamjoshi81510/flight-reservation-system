@@ -40,8 +40,8 @@ public class FlightScheduleDetailLogic {
         flightSchedulesDetail.setMaxWatingQueu(flightScheduleDetailsReq.getMaxWatingQueu());
         flightSchedulesDetail.setFlightDetail(flightDetail);
         flightSchedulesDetail.setPilotDetail(pilotDetail);
-        flightSchedulesDetail.setSourceAirportId(airpotsDetails);
-        flightSchedulesDetail.setDestinationAirportId(airpotsDetails1);
+        flightSchedulesDetail.setSourceAirport(airpotsDetails);
+        flightSchedulesDetail.setDestinationAirport(airpotsDetails1);
         flightScheduleDetailsRepository.save(flightSchedulesDetail);
         return flightSchedulesDetail;
     }

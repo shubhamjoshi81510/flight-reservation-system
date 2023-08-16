@@ -16,8 +16,7 @@ public class FlightTicketBookings {
 
     @ManyToOne
     @JoinColumn (name ="schedule_id")
-    private FlightSchedulesDetail scheduleId;
-
+    private FlightSchedulesDetail flightSchedulesDetail;
 
     @Column(name ="customer_name")
     private String customerName;
